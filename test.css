@@ -1,0 +1,136 @@
+.section1{
+    display:flex;
+    flex-direction:row;
+    height:300vh;
+    width:100%;
+    background-color:red;
+}
+
+.section1-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+    height:100%;
+    background-color:white;
+    position:relative;
+}
+
+.section1-right{
+    width:50%;
+    height:100%;
+    background-color:blue;
+}
+
+.outer-circle{
+    width:100%;
+    position:absolute;
+    top:100px;
+}
+
+.inner-circle{
+    width:60%;
+    position:absolute;
+    top:225px;
+    margin-left:0px;
+}
+
+.center-circle{
+    width:32%;
+    position:absolute;
+    top:310px;
+    margin-left:0px;
+}
+
+#h{
+    height:100vh;
+}
+
+@media only screen and (min-width:375px){
+    .section1{
+        flex-direction:column;
+    }
+
+    .section1-left{
+        width:100%;
+        height:50%;
+    }
+
+    .section1-right{
+        width:100%;
+        height:50%;
+    }
+    .outer-circle{
+        top:100px;
+    }
+    .inner-circle{
+        top:175px;
+    }
+
+    .center-circle{
+        top:230px;
+    }
+}
+@media only screen and (min-width:768px){
+    .section1{
+        flex-direction:row;
+    }
+    .section1-left{
+        width:50%;
+        height:100%;
+    }
+    .section1-right{
+        width:50%;
+        height:100%;
+    }
+    .outer-circle{
+        top:100px;
+    }
+    .inner-circle{
+        top:180px;
+    }
+
+    .center-circle{
+        top:230px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .outer-circle{
+        top:100px;
+    }
+    .inner-circle{
+        top:200px;
+    }
+
+    .center-circle{
+        top:270px;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .outer-circle{
+        top:100px;
+    }
+    .inner-circle{
+        top:225px;
+    }
+
+    .center-circle{
+        top:310px;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    .outer-circle{
+        top:100px;
+    }
+    .inner-circle{
+        top:240px;
+    }
+
+    .center-circle{
+        top:340px;
+    }
+}
